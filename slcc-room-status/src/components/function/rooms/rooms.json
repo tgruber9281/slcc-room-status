@@ -3,70 +3,70 @@
         {
             "id": "001",
             "name": "Room 1",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "002",
             "name": "Room 2",
-            "status": true,
+            "status": "dirty",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "003",
             "name": "Room 3",
-            "status": true,
+            "status": "occupied",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "004",
             "name": "Room 4",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "005",
             "name": "Room 5",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "006",
             "name": "Room 6",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "007",
             "name": "Dental Table 1",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "008",
             "name": "Dental Table 2",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "009",
             "name": "Surgery Suite",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         },
         {
             "id": "010",
             "name": "Radiology",
-            "status": true,
+            "status": "clean",
             "staff": [],
             "apptType": ""
         }

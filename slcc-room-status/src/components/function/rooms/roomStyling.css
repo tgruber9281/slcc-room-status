@@ -1,0 +1,35 @@
+.rooms {
+    display: block;
+}
+.rooms > div {
+    display: inline-grid;
+    padding: 2%;
+    border: black;
+    border-style: solid;
+    width: 45%;
+}
+
+.room-clean {
+    background-color: #00ab66;
+    color: white;
+}
+
+.room-occupied {
+    background-color: blue;
+    color: white;
+}
+
+.room-dirty {
+    background-color: red;
+    color: white;
+}
+
+.roomApptType {
+    visibility: hidden;
+}
+
+.rooms-container {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4rem;
+  }
