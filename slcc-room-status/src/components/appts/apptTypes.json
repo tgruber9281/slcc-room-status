@@ -1,0 +1,27 @@
+{"apptTypes":
+    [
+        {
+            "id": "001",
+            "type": "Exam"
+        },
+        {
+            "id": "002",
+            "type": "Recheck"
+        },
+        {
+            "id": "003",
+            "type": "Tech Appt"
+        },
+        {
+            "id": "004",
+            "type": "Surgery"
+        },
+        {
+            "id": "005",
+            "type": "Dental"
+        },
+        {
+            "id": "006",
+            "type": "Radiology"
+        }
+    ]}

@@ -1,0 +1,64 @@
+{"staff":
+    [
+        {
+            "id": "001",
+            "active": true,
+            "name": "Dr. Gruber",
+            "position": "Doctor"
+        },
+        {
+            "id": "002",
+            "active": true,
+            "name": "Dr. Howard",
+            "position": "Doctor"
+        },
+        {
+            "id": "003",
+            "active": true,
+            "name": "Dr. Allen",
+            "position": "Doctor"
+        },
+        {
+            "id": "004",
+            "active": true,
+            "name": "Dr. White",
+            "position": "Doctor"
+        },
+        {
+            "id": "005",
+            "active": true,
+            "name": "Kristin",
+            "position": "Technician"
+        },
+        {
+            "id": "006",
+            "active": true,
+            "name": "Lori",
+            "position": "Technician"
+        },
+        {
+            "id": "007",
+            "active": true,
+            "name": "Trevor",
+            "position": "Technician"
+        },
+        {
+            "id": "008",
+            "active": true,
+            "name": "Kayla",
+            "position": "Technician"
+        },
+        {
+            "id": "009",
+            "active": true,
+            "name": "Rachael",
+            "position": "Technician"
+        },
+        {
+            "id": "010",
+            "active": true,
+            "name": "Sandra",
+            "position": "Technician"
+        },
+        
+    ]}
