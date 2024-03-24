@@ -1,21 +1,48 @@
 import rooms from "./rooms.json";
-import "./roomStyling.css"
-
-let roomList = rooms.rooms;
+import { useState } from "react";
+import "./roomStyling.css";
 
 function RoomList() {
+  function handleRoomClick(index) {
+    setRoomToEdit(index);
+  }
+
+  const [roomList, setRoomList] = useState(rooms.rooms);
+  const [roomToEdit, setRoomToEdit] = useState(null);
+  const editRoom = () => {
+    if (roomToEdit !== null) {
+      return (
+        <>
+          <p>{roomList[roomToEdit].name}</p>
+          
+        </>
+      );
+    }
+  };
+
   return (
-    <div className="rooms">
-      {roomList.map(room => {
-        return (
-          <div key={room.id} className={"room-"+room.status} id={room.id+"-room"}>
-            {room.name} is {room.status}
-            <div className="roomStaff">Staff in room: {room.staff}</div>
-            <div className="roomApptType" id={room.id+"roomApptType"}>{room.apptType}</div>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <div className="rooms">
+        {roomList.map((data, index) => {
+          return (
+            <div
+              key={data.id}
+              className={"room-" + data.status}
+              id={data.id + "-room"}
+              onClick={() => handleRoomClick(index)}
+            >
+              {data.name} is {data.status}
+              <div className="roomStaff">Staff in room: {data.staff}</div>
+              <div className="roomApptType" id={data.id + "roomApptType"}>
+                {data.apptType}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="edit-room">{editRoom()}</div>
+    </>
   );
 }
 

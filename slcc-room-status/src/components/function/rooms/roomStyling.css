@@ -33,3 +33,14 @@
     padding-right: 20%;
     padding-top: 4rem;
   }
+
+  .edit-room {
+    /* visibility: hidden; */
+    background-color: black;
+    padding: 5px;
+    color: white;
+    width: 20%;
+    position: fixed;
+    top: 6rem;
+    left: 50px;
+  }
