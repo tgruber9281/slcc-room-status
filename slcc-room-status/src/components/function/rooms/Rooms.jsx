@@ -1,35 +1,16 @@
-import rooms from "./rooms.json";
-import { useState } from "react";
 import "./roomStyling.css";
 
-function RoomList() {
-  function handleRoomClick(index) {
-    setRoomToEdit(index);
-  }
-
-  const [roomList, setRoomList] = useState(rooms.rooms);
-  const [roomToEdit, setRoomToEdit] = useState(null);
-  const editRoom = () => {
-    if (roomToEdit !== null) {
-      return (
-        <>
-          <p>{roomList[roomToEdit].name}</p>
-          
-        </>
-      );
-    }
-  };
-
+function RoomList({ roomList, setRoomIndex }) {
   return (
     <>
       <div className="rooms">
-        {roomList.map((data, index) => {
+        {roomList.rooms.map((data, index) => {
           return (
             <div
               key={data.id}
               className={"room-" + data.status}
               id={data.id + "-room"}
-              onClick={() => handleRoomClick(index)}
+              onClick={() => setRoomIndex(index)}
             >
               {data.name} is {data.status}
               <div className="roomStaff">Staff in room: {data.staff}</div>
@@ -40,8 +21,6 @@ function RoomList() {
           );
         })}
       </div>
-
-      <div className="edit-room">{editRoom()}</div>
     </>
   );
 }
