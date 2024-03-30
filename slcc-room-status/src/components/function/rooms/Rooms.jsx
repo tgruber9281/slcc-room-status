@@ -1,6 +1,11 @@
 import "./roomStyling.css";
 
-function RoomList({ roomList, setRoomIndex }) {
+function RoomList({ roomList, roomIndex, setRoomIndex, setStatusRadio }) {
+  function handleClick(data, index) {
+    if (roomIndex !== index) {
+    setRoomIndex(index);
+    setStatusRadio(data.status);}
+  }
   return (
     <>
       <div className="rooms">
@@ -10,7 +15,9 @@ function RoomList({ roomList, setRoomIndex }) {
               key={data.id}
               className={"room-" + data.status}
               id={data.id + "-room"}
-              onClick={() => setRoomIndex(index)}
+              onClick={() => {
+                handleClick(data, index);
+              }}
             >
               {data.name} is {data.status}
               <div className="roomStaff">Staff in room: {data.staff}</div>
